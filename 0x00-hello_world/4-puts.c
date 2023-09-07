@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-/*
+/**
+ * 
  * main - prints text
- *
- * puts is used in place of prinf
- * return value of 0
+ * 
+ * Return: (0) success 
  */
 
 int main(void)
