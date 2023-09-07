@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - prints text 
- * Return: (0) success 
+* main - prints text 
+* Return: (0) success 
  */
 
 int main(void)
