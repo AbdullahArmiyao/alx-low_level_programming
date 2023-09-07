@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * 
- * main - prints text
- * 
+ * main - prints text 
  * Return: (0) success 
  */
 
