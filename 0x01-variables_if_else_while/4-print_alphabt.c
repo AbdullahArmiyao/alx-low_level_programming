@@ -10,11 +10,11 @@ int main(void)
 {
 	char ch = 'a';
 
-	while (ch <= 'z')
+	outer:while (ch <= 'z')
 	{
 		if (ch == 'e' && ch == 'q')
 		{
-			continue;
+			continue outer;
 		}
 		putchar(ch);
 		ch++;
