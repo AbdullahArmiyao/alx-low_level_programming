@@ -10,13 +10,12 @@ int main(void)
 {
 	char ch = 'a';
 
-	outer:while (ch <= 'z')
+	while (ch <= 'z')
 	{
-		if (ch == 'e' && ch == 'q')
+		if (ch != 'e' && ch != 'q')
 		{
-			continue outer;
+			putchar(ch);
 		}
-		putchar(ch);
 		ch++;
 	}
 	putchar('\n');
