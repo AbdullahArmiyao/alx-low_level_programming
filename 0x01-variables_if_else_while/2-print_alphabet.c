@@ -8,10 +8,13 @@
 
 int main(void)
 {
-	char chs[] = {'a','b','c','d','e','f','g','h','i','j','k','l'}
-	char ch[] = {'n','o','p','q','r','s','t','u','v','w','x','y','z'}
-
-	putchar(chs);
-	putchar(ch);
+	char chs = 'a';
+	
+	while (chs <= 'z')
+	{
+		putchar(chs);
+		chs++;
+	}
+	putchar('\n');
 	return (0);
 }
