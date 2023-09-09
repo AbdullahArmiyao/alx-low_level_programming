@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int a = 0, b = 0
+	int a = 0, b = 0;
 
 	while (a <= 98)
 	{
@@ -21,7 +21,7 @@ int main(void)
 			putchar('0' + b / 10);
 			putchar('0' + b % 10);
 
-			if (a != 99 && n != 99)
+			if (a != 99 && b != 99)
 			{
 				putchar(',');
 				putchar(' ');
