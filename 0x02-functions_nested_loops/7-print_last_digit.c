@@ -3,6 +3,9 @@
 /**
  * print_last_digit - function that prints last digit
  *
+ * @n: number to be checked
+ *
+ *
  * Return: last digit of n
  */
 
