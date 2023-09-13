@@ -9,7 +9,8 @@
 
 int main(void)
 {
-	int c, f1, f2, s;
+	int c;
+       	unsinged long f1 = 0, f2 = 1, s;
 
 	for (c = 0; c < 50; c++)
 	{
