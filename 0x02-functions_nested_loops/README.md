@@ -40,4 +40,4 @@ Once you do this, define each function in each task like I did in my code.
 
 11. Define the function to print all natural numbers from n to 98, followed by a new line
 
-THE REST ARE ADVANCED, WE WILL DO THOSE LATER ;)😁😁
+100. Define the function to print n times table 

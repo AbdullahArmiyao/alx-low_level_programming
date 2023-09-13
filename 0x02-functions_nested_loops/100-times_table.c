@@ -6,7 +6,7 @@
  *
  * @n: is the number
  *
- * Return: int
+ * Return: void
  *
  */
 
