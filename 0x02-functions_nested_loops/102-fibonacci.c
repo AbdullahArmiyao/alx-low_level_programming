@@ -17,12 +17,12 @@ int main(void)
 		printf("%d", s);
 
 		f1 = f2;
-		f2 = sum;
+		f2 = s;
 
 		if (c == 49)
 			printf("\n");
 		else
 			printf(", ");
-
+	}
 	return (0);
 }
