@@ -24,12 +24,12 @@ void print_times_table(int n)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(' ');
 
 				p = i * m;
 
 				if (p <= 9 && p <= 99)
 				{
+					_putchar(' ');
 					_putchar(' ');
 				}
 				if (p >= 100)
