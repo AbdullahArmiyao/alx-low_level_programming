@@ -23,6 +23,6 @@ int main(void)
 		f2 = s;
 	}
 
-	pintf("%.0f\n", ts);
+	printf("%.0f\n", ts);
 	return (0);
 }
