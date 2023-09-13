@@ -10,14 +10,14 @@
 int main(void)
 {
 	int i;
-	unsigned long f1 = 1, f2 = 2, n;
+	unsigned int f1 = 1, f2 = 2, n;
 
-	printf("%lu, %lu", f1, f2);
+	printf("%u, %u", f1, f2);
 
 	for (i = 3; i <= 98; i++)
 	{
 		n = f1 + f2;
-		printf(", %lu", n);
+		printf(", %u", n);
 		f1 = f2;
 		f2 = n;
 	}
