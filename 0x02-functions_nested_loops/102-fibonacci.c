@@ -10,7 +10,7 @@
 int main(void)
 {
 	int c;
-       	unsinged long f1 = 0, f2 = 1, s;
+       	unsigned long f1 = 0, f2 = 1, s;
 
 	for (c = 0; c < 50; c++)
 	{
