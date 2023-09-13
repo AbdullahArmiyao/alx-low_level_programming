@@ -8,23 +8,21 @@
 
 int main(void)
 {
-	int i;
+	float ts;
 	unsigned long f1 = 0, f2 = 1, s;
 
-	for (i = 0; i < 4000000; i++)
+	while (1)
 	{
-		if ((i % 2) == 0)
-		{
-			s = f1 + f2;
-			printf("%lu", s);
-			f1 = f2;
-			f2 = s;
 
-			if (i != 3999998)
-				printf(", ");
-			else
-				printf("\n");
-		}
+		s = f1 + f2;
+		if (s > 4000000)
+			break;
+		if ((s % 2) == 0)
+			ts += s;
+		f1 = f2;
+		f2 = s;
 	}
+
+	pintf("%.0f\n", ts);
 	return (0);
 }
