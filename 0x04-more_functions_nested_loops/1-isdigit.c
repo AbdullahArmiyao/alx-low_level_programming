@@ -5,7 +5,8 @@
  *
  * @c: value to be checked
  *
- * Return: 0
+ * Return: 1 if digit
+ * Return: 0 if not digit
  */
 
 int _isdigit(int c)
@@ -14,5 +15,4 @@ int _isdigit(int c)
 		return (1);
 	else
 		return (0);
-	return (0);
 }
