@@ -19,7 +19,7 @@ void print_triangle(int size)
 
 	else
 	{
-		for (row = 0; row < size; row++)
+		for (row = 1; row <= size; row++)
 		{
 			for (space = size - row; space >= 1; space--)
 			{
