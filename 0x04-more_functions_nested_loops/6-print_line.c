@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * print_line - main function
+ *
+ * Return: void
+ */
+
+
 void print_line(int n)
 {
 	for (int i = 0; i < n; i++)
