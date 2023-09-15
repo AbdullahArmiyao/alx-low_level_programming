@@ -3,7 +3,7 @@
 /**
  * print_square - main function
  *
- * @n: number of times
+ * @size: number of times
  *
  * Return: void
  */
