@@ -2,7 +2,7 @@
 
 /**
  * print_line - main function
- *
+ * @n: value to be checked
  * Return: void
  */
 
