@@ -34,20 +34,20 @@ main.h => where all functions to be used later on are declared
 
 0-reset_to_98.c => use the pointer *n to reassign a value to wherever it is pointing to.
 
-1-swap.c
+1-swap.c =>  function that swaps the values of two integers.
 
-2-strlen.c
+2-strlen.c => function that returns the length of a string
 
-3-puts.c
+3-puts.c => function that prints a string, followed by a new line, to stdout
 
-4-print_rev.c
+4-print_rev.c => function that prints a string, in reverse, followed by a new line
 
-5-rev_string.c
+5-rev_string.c => function that reverses a string
 
-6-puts2.c
+6-puts2.c => function that prints every other character of a string, starting with the first character, followed by a new line
 
-7-puts_half.c
+7-puts_half.c => function that prints half of a string, followed by a new line.
 
-8-print_array.c
+8-print_array.c => function that prints n elements of an array of integers, followed by a new line
 
-9-strcpy.c
+9-strcpy.c => function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest
