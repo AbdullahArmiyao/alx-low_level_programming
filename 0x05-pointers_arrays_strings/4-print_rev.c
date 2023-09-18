@@ -18,7 +18,7 @@ void print_rev(char *s)
 	{
 		pointer++;
 	}
-	
+
 	length = pointer;
 
 	for (count = length - 1; count >= 0; count--)
