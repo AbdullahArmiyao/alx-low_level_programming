@@ -19,14 +19,15 @@ void puts_half(char *str)
 		length++;
 	}
 
-	if (length % 2 == 0)
-	{
-		start_index = length / 2;
-	}
-	else
+	if (length + 1 % 2 != '0')
 	{
 		start_index = (length - 1) / 2;
 	}
+	else
+	{
+		start_index = (length / 2);
+	}
+	start_index++;
 
 	while (str[start_index] != '\0')
 	{
