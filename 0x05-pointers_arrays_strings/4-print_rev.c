@@ -1,4 +1,3 @@
-/*#include <string.h>*/
 #include "main.h"
 
 /**
@@ -11,23 +10,20 @@
 
 void print_rev(char *s)
 {
-	int start = 0;
-	int end = 0;
-	char temp;
+	int pointer = 0;
+	int count;
+	int length;
 
-	while (s[end] != '\0')
+	while (s[pointer] != '\0')
 	{
-		end++;
+		pointer++;
 	}
-	end--;
+	
+	length = pointer;
 
-	while (start < end)
+	for (count = length - 1; count >= 0; count--)
 	{
-		temp = s[start];
-		s[start] = s[end];
-		s[end] = temp;
-
-		start++;
-		end--;
+		_putchar(s[count]);
 	}
+	_putchar('\n');
 }
