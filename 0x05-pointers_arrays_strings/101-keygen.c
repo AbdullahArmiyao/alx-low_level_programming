@@ -5,10 +5,10 @@
 /**
  * main - main function
  *
- * Return: void
+ * Return: 0 success
  */
 
-void main()
+int main(void)
 {
 	int pass[100];
 
@@ -31,4 +31,5 @@ void main()
 			break;
 		}
 	}
+	return (0);
 }
