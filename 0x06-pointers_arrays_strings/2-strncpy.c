@@ -7,7 +7,7 @@
  * @src: string to be replaced
  * @n: number of copies
  *
- * Return: dest
+ * Return: char 
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -23,7 +23,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	while (d < n)
 	{
-		dest[d] != '\0';
+		dest[d] = '\0';
 		d++;
 	}
 	return (dest);
