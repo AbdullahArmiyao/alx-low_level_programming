@@ -11,10 +11,6 @@
 
 char _strcmp(char *s1, char *s2)
 {
-	char *first = s1;
-	char *sec = s2;
-
-	int i = 0, j = 0;
 
 	while (*s1 != '\0' && *s2 != '\0')
 	{
