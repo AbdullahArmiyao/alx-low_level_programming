@@ -6,7 +6,7 @@
  * @s1: string  to be compared
  * @s2: string to be compared
  *
- * Return: char
+ * Return: int
  */
 
 char _strcmp(char *s1, char *s2)
