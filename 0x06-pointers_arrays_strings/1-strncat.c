@@ -5,7 +5,7 @@
  *
  * @dest: string to be appeneded
  * @src: string to append
- *
+ * @n: number of characters of src to append
  * Return: answer
  */
 
