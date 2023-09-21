@@ -7,7 +7,7 @@
  * @src: string to be replaced
  * @n: number of copies
  *
- * Return: char 
+ * Return: char
  */
 
 char *_strncpy(char *dest, char *src, int n)
