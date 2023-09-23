@@ -26,9 +26,9 @@ char *cap_string(char *s)
 			{
 				for (process = 0; process <= 12; process++)
 				{
-					if a[process] == *(s + i - 1)
+					if (seperators[process] == *(s + i - 1))
 					{
-						*(s + i) = 'a' - 'A';
+						*(s + i) -= 'a' - 'A';
 					}
 				}
 			}
