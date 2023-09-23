@@ -12,27 +12,28 @@ char *cap_string(char *s)
 {
 	int count = 0, process;
 
-	char seperators[] = "\n\t,;.!?\"(){}";
+	char sep[] = "\t\n,;.!?\"(){}";
 
-	while (*(s + i))
+	while (*(s + count))
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		if (*(s + count) >= 'a' && *(s + count) <= 'z')
 		{
-			if (i == 0)
+			if (count == 0)
 			{
-				*(s + i) -= 'a' - 'A';
+				*(s + count) -= 'a' - 'A';
 			}
 			else
 			{
 				for (process = 0; process <= 12; process++)
 				{
-					if (seperators[process] == *(s + i - 1))
+					if (sep[process] == *(s + count - 1))
 					{
-						*(s + i) -= 'a' - 'A';
+						*(s + count) -= 'a' - 'A';
 					}
 				}
 			}
 		}
-		i++;
+		count++;
 	}
+	return (s);
 }
