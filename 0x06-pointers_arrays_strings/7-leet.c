@@ -23,8 +23,9 @@ char *leet(char *s)
 			{
 				s[c] = l[lc];
 			}
-			c++;
+			lc++;
 		}
+		c++;
 	}
 	return (s);
 }
