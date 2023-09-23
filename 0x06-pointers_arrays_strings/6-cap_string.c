@@ -12,7 +12,7 @@ char *cap_string(char *s)
 {
 	int c = 0, p;
 
-	char d[] = "\t\n,;.!?\"(){}";
+	char d[] = " \t\n,;.!?\"(){}";
 
 	while (*(s + c))
 	{
