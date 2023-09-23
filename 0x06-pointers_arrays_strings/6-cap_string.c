@@ -10,30 +10,30 @@
 
 char *cap_string(char *s)
 {
-	int count = 0, process;
+	int c = 0, p;
 
-	char sep[] = "\t\n,;.!?\"(){}";
+	char d[] = "\t\n,;.!?\"(){}";
 
-	while (*(s + count))
+	while (*(s + c))
 	{
-		if (*(s + count) >= 'a' && *(s + count) <= 'z')
+		if (*(s + c) >= 'a' && *(s + c) <= 'z')
 		{
-			if (count == 0)
+			if (c == 0)
 			{
-				*(s + count) -= 'a' - 'A';
+				*(s + c) -= 'a' - 'A';
 			}
 			else
 			{
-				for (process = 0; process <= 12; process++)
+				for (p = 0; p <= 12; p++)
 				{
-					if (sep[process] == *(s + count - 1))
+					if (d[p] == *(s + c - 1))
 					{
-						*(s + count) -= 'a' - 'A';
+						*(s + c) -= 'a' - 'A';
 					}
 				}
 			}
 		}
-		count++;
+		c++;
 	}
 	return (s);
 }
