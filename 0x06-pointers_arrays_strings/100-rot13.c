@@ -13,13 +13,13 @@ char *rot13(char *s)
 {
 	int i = 0, j = 0;
 
-	char *c = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char *r = "NOPQRSTUVWXYZABCDEFGHIJKLM";
+	char *c = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char *r = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	while (s[i] != '\0')
 	{
 		j = 0;
-		while (j < 26)
+		while (j < 52)
 		{
 			if (s[i] == c[j])
 			{
