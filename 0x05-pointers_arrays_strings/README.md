@@ -26,6 +26,15 @@ pointer(*p) => 	| memory alloc	| <= Data (n)
 		(alloc = allocated)
 
 
+But pointing another pointer to a pointer
+
+int n = 20;
+int *p = &n;
+int *m = p;
+
+Notice i did not use &, that is because we want the value of p, not it's address
+
+
 
 ----------TASKS----------
 	=========
@@ -51,3 +60,7 @@ main.h => where all functions to be used later on are declared
 8-print_array.c => function that prints n elements of an array of integers, followed by a new line
 
 9-strcpy.c => function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest
+
+100-atoi.c => function that converts string to integer
+
+101-keygen => password cracker
