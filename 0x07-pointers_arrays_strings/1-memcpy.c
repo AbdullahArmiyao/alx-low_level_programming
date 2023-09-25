@@ -7,11 +7,16 @@
  * @dest: memomry area to be copied to
  * @n: number of memory area to be copied
  * Return: char
+ *
+ * The codes in the comments are my errors
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	char *dest2 = dest;
+	/**
+	 * char *dest2 = dest;
+	 */
+
 	unsigned int i = 0;
 
 	/**
@@ -26,5 +31,10 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		dest[i] = src[i];
 		src++;
 	}
-	return (dest2);
+
+	/**
+	 * return (dest2);
+	 */
+
+	return (dest);
 }
