@@ -22,6 +22,16 @@ int _sqrt(int n, int i)
 	return (_sqrt(n, i + 1));
 }
 
+
+/**
+ * _sqrt_recursion - function that returns the natural square root of a number
+ *
+ * @n: number
+ *
+ * Return: int
+ */
+
+
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
