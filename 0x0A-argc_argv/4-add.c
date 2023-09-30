@@ -18,8 +18,9 @@ int main(int argc, char **argv)
 	if (argc < 2)
 	{
 		printf("%d\n", null);
+		return (0);
 	}
-	
+
 	for (c = 1; argv[c]; c++)
 	{
 		n = strtol(argv[c], &f, 10);
