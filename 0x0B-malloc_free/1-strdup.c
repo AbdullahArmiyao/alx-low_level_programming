@@ -12,7 +12,7 @@
 
 char *_strdup(char *str)
 {
-	int length = 0, i, j = 0;
+	int length = 0, i = 0;
 	char *new_string;
 
 	if (str == NULL)
@@ -20,7 +20,7 @@ char *_strdup(char *str)
 		return (0);
 	}
 
-	for (i = 0; i < str[i]; i++)
+	while (*str != '\0')
 	{
 		length++;
 	}
@@ -30,10 +30,10 @@ char *_strdup(char *str)
 	if (new_string == NULL)
 		return (0);
 
-	while (j < length - 1)
+	while (i < length - 1)
 	{
 		new_string[i] = str[i];
-		j++;
+		i++;
 	}
 
 	new_string[length] = '\0';
