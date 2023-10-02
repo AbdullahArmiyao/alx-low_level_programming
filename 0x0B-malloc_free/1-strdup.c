@@ -23,14 +23,17 @@ char *_strdup(char *str)
 	while (*str != '\0')
 	{
 		length++;
+		str++;
 	}
+
+	str -= length;
 
 	new_string = malloc((length + 1) * sizeof(char));
 
 	if (new_string == NULL)
 		return (0);
 
-	while (i < length - 1)
+	while (i < length)
 	{
 		new_string[i] = str[i];
 		i++;
