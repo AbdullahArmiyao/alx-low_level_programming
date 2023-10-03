@@ -26,20 +26,21 @@ int **alloc_grid(int width, int height)
 
 	while (i < height)
 	{
+		/* allocate memory for rows */
 		grid[i] = (int *)malloc(width * sizeof(int));
 
 		if (grid[i] == NULL)
 		{
-			while (j < i)
+			while (i >= 0)
 			{
-				free(grid[j]);
-				j++;
+				free(grid[i]);
+				i--;
 			}
 
 			free(grid);
 			return (NULL);
+		/* handle memory allocation failure and dangling pointer */
 		}
-		j = 0;
 		while (j < width)
 		{
 			grid[i][j] = 0;
