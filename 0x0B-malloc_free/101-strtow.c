@@ -69,7 +69,7 @@ char *cpy_wd(char *str, int strt, int end)
 	{
 		return (NULL);
 	}
-	while (i <= len)
+	while (i < len)
 	{
 		word[i] = str[strt + i];
 		i++;
@@ -93,7 +93,8 @@ char **strtow(char *str)
 	int n_word = cnt_word(str);
 	char **word = (char **)malloc((n_word + 1) * sizeof(char *));
 	/* declaring word index, current word and position */
-	int i = 0, i_word = 0, pos = 0, cur_word;
+	int i = 0, i_word = 0, pos = 0, cur_word = 0;
+
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
