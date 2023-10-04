@@ -65,6 +65,7 @@ char *argstostr(int ac, char **av)
 	if (new_string == NULL)
 		return (NULL);
 
+	i = 0;
 	/* copy each argument and add a new line */
 	while (i < ac)
 	{
