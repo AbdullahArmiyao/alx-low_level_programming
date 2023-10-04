@@ -69,7 +69,7 @@ char *cpy_wd(char *str, int strt, int end)
 	{
 		return (NULL);
 	}
-	while (i < len)
+	while (i <= len)
 	{
 		word[i] = str[strt + i];
 		i++;
