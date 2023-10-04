@@ -102,7 +102,7 @@ char **strtow(char *str)
 		return (NULL);
 	}
 	/* declaring word index, current word and position */
-	int i, i_word = 0, pos = 0, cur_word;
+	int i = 0, i_word = 0, pos = 0, cur_word;
 	/*iterates through the string such that */
 	/*[1] if it encounters ' ' it checks if it was in the*/
 	/*middle of a word. If so, it calls the cpy_wd function to copy the word*/
@@ -114,18 +114,18 @@ char **strtow(char *str)
 		{
 			if (cur_word)
 			{
-				word[i_word++] = cpy_wd(str, strt, i - 1);
+				word[i_word++] = cpy_wd(str, pos, i - 1);
 				cur_word = 0;
 			}
 		} else if (!cur_word)
 		{
-			strt = i;
+			pos = i;
 			cur_word = 1;
 		}
 	}
 	if (cur_word)
 	{
-		word[i_word] = cpy_wd(str, strt, str_len(str) - 1);
+		word[i_word] = cpy_wd(str, pos, str_len(str) - 1);
 	}
 	word[i_word] = NULL;
 	return (word);
