@@ -89,15 +89,14 @@ char *cpy_wd(char *str, int strt, int end)
 
 char **strtow(char *str)
 {
-	if (str == NULL || *str == '\0')
-	{
-		return (NULL);
-	}
 	/*count words and store it n_word and allocate memory for pointers to words*/
 	int n_word = cnt_word(str);
 	char **word = (char **)malloc((n_word + 1) * sizeof(char *));
 	/* declaring word index, current word and position */
 	int i = 0, i_word = 0, pos = 0, cur_word;
+
+	if (str == NULL || *str == '\0')
+		return (NULL);
 
 	if (word == NULL)
 	{
