@@ -125,7 +125,7 @@ char **strtow(char *str)
 	}
 	if (cur_word)
 	{
-		word[i_word] = cpy_wd(str, pos, str_len(str) - 1);
+		word[i_word] = cpy_wd(str, pos, i - 1);
 	}
 	word[i_word] = NULL;
 	return (word);
