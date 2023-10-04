@@ -96,13 +96,13 @@ char **strtow(char *str)
 	/*count words and store it n_word and allocate memory for pointers to words*/
 	int n_word = cnt_word(str);
 	char **word = (char **)malloc((n_word + 1) * sizeof(char *));
+	/* declaring word index, current word and position */
+	int i = 0, i_word = 0, pos = 0, cur_word;
 
 	if (word == NULL)
 	{
 		return (NULL);
 	}
-	/* declaring word index, current word and position */
-	int i = 0, i_word = 0, pos = 0, cur_word;
 	/*iterates through the string such that */
 	/*[1] if it encounters ' ' it checks if it was in the*/
 	/*middle of a word. If so, it calls the cpy_wd function to copy the word*/
