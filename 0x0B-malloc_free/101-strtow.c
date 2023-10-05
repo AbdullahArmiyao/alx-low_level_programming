@@ -108,7 +108,7 @@ char **strtow(char *str)
 	/*middle of a word. If so, it calls the cpy_wd function to copy the word*/
 	/*[2] If it encounters words and cur_word = 0 it sets the strt index to the*/
 	/*current position and marks that it is in the middle of a word*/
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; i < str_len(str); i++)
 	{
 		if (str[i] == ' ')
 		{
@@ -125,7 +125,7 @@ char **strtow(char *str)
 	}
 	if (cur_word)
 	{
-		word[i_word] = cpy_wd(str, pos, i - 1);
+		word[i_word++] = cpy_wd(str, pos, i - 1);
 	}
 	word[i_word] = NULL;
 	return (word);
