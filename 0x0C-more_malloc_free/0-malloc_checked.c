@@ -19,7 +19,7 @@ void *malloc_checked(unsigned int b)
 
 	/* check if memory allocation failed */
 	if (pnt == NULL)
-		return ((void *)98);
+		return ((unsigned int *)98);
 
 	/* return pnt which holds allocated memory address */
 	return (pnt);
