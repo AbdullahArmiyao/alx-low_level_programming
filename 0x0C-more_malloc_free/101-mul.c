@@ -71,23 +71,23 @@ int main(int argc, char **argv)
 
 	if (argc != 3)
 		err_mess(); /* check if argc is more or less than 2 numbers */
-	
+
 	num1 = argv[1]; /* value for the first number */
 	num2 = argv[2];/* value for second number */
-	
+
 	num1_len = str_len(num1); /* length of first number */
 	num2_len = str_len(num2); /* length of second number */
-	
-	
+
+
 	t_len = num1_len + num2_len; /* total length */
 	res = malloc(sizeof(char) * (t_len + 1)); /* allocate memory to the result */
-	
+
 	if (res == NULL) /* check if malloc failed */
 		err_mess();
-	
+
 	mem_set(res, '0', t_len); /* initialize result array with zeroes */
 	res[t_len] = '\0';
-	
+
 	for (i = num1_len - 1; i >= 0; i--)
 	{
 		for (j = num2_len - 1; j >= 0; j--)
@@ -114,8 +114,8 @@ int main(int argc, char **argv)
 		puts("0"); /* answer is  0 */
 	else
 		printf("%s\n", res + start); /* print result without theleading zero*/
-	
+
 	free(res);
-	
+
 	return (0);
 }
