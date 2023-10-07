@@ -111,7 +111,7 @@ int main(int argc, char **argv)
 	while (start < t_len && res[start] == '0')
 		start++;
 	if (start == t_len)
-		puts("0\n"); /* answer is  0 */
+		puts("0"); /* answer is  0 */
 	else
 		printf("%s\n", res + start); /* print result without theleading zero*/
 
