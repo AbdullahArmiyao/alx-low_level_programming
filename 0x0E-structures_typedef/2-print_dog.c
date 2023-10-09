@@ -9,17 +9,16 @@
  */
 void print_dog(struct dog *d)
 {
-	d = malloc(sizeof(struct dog));
-
+	/* if d is empty, print nothing */
 	if (d == NULL)
-		return (NULL);
+		return;
+	
+	/* print dog name but if null, print nil */
+	printf("Name: %s\n", ((d->name) ? d->name : "(nil)"));
 
-	if (d->name == NULL)
-		return (nil);
-	if (d->age == NULL)
-		return (nil);
-	if (d->owner == NULL)
-		return (nil);
-
-	return (d);
+	/* if the age is not less than 0, print it, else print nil */
+	printf("Age: %f\n", ((d->age >= 0.0) ? d->age : "(nil)"));
+	
+	/* print owner name but if null, print nil */
+	printf("Owner: %s\n", ((d->owner) ? d->owner : "(nil)"));
 }
