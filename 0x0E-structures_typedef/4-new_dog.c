@@ -48,32 +48,32 @@ char *str_cpy(char *destination, const char *source)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	/* allocate memory for dog_t struct */
-	dog_t *dog = malloc(sizeof(dog_t));
+	dog_t *d = malloc(sizeof(dog_t));
 
 	/* check if malloc failed */
-	if (dog == NULL)
+	if (d == NULL)
 		return (NULL);
 
 	/* allocate memory for name and owner */
-	dog->name = malloc(sizeof(char) * (str_len(name) + 1));
+	d->name = malloc(sizeof(char) * (str_len(name) + 1));
 
-	if (dog->name == NULL)
+	if (d->name == NULL)
 	{
-		free(dog);
+		free(d);
 		return (NULL);
 	}
 
-	dog->owner = malloc(sizeof(char) * (str_len(owner) + 1));
+	d->owner = malloc(sizeof(char) * (str_len(owner) + 1));
 
 	if (d->owner == NULL)
 	{
-		free(dog);
+		free(d);
 		return (NULL);
 	}
 
-	str_cpy(dog->name, name);
-	str_cpy(dog->owner, owner);
-	dog->age = age;
+	str_cpy(d->name, name);
+	str_cpy(d->owner, owner);
+	d->age = age;
 
-	return (dog);
+	return (d);
 }
