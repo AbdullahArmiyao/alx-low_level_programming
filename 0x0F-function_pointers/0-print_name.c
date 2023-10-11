@@ -9,6 +9,9 @@
 
 void print_name(char *name, void (*f)(char *))
 {
+	/* check if name or function pointer is null */
+	if (name == NULL || f == NULL)
+		return;
 	/* call the function pointer f with the provded name as argument */
 	f(name);
 }
