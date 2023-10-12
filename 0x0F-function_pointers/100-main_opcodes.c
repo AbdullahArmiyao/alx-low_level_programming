@@ -41,14 +41,13 @@ int main(int argc, char **argv)
 		/* to handle last byte */
 		if (index == byte - 1)
 		{
-			/* print the hex representation of the byte stored in array at current index */
+			/* print the hex representation of the byte stored in array at */
+			 /* current index */
 			printf("%02hhx\n", array[index]);
 			break;
 		}
-
 		printf("%02hhx ", array[index]);
 		index++;
 	}
-
 	return (0);
 }
