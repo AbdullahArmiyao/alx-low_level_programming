@@ -24,7 +24,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	while (i < n)
 	{
 		/* get the string argument */
-		const char *str = va_arg(args, const char *);
+		const char *str = va_arg(args, char *);
 
 		/* print (nil) if string is empty */
 		if (str == NULL)
