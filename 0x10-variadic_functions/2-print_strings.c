@@ -31,9 +31,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			printf("(nil)");
 		}
-
-		/* print the string */
-		printf("%s", str);
+		else
+		{
+			/* print the string */
+			printf("%s", str);
+		}
 
 		/* print the separator as long as the conditions are met */
 		if (separator != NULL && i < (n - 1))
