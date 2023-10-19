@@ -34,6 +34,11 @@ int main(void)
 														        add_node(&head, "Tasneem");
 															    add_node(&head, "William");
 															        add_node(&head, "Zee");
+																add_node_end(&head, "Anne");
+																    add_node_end(&head, "Colton");
+																        add_node_end(&head, "Corbin");
+																	    add_node_end(&head, "Daniel");
+																	        add_node_end(&head, "Danton");
 																    print_list(head);
 																        return (0);
 }
