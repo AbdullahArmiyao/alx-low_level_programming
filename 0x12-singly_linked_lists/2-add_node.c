@@ -27,7 +27,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (new_node->str == NULL)
 	{
 		/* free memory and return null if new_node->str is null */
-		free(new_node->str);
+		free(new_node);
 		return (NULL);
 	}
 	/* point the new node tho current head */
