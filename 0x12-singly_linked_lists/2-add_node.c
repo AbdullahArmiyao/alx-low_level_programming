@@ -19,7 +19,7 @@ list_t *add_node(list_t **head, const char *str)
 	new_node = malloc(sizeof(list_t));
 	/* if the memory is null, return null */
 	if (new_node == NULL)
-		return (new_node);
+		return (NULL);
 
 	/* duplicate the input string */
 	new_node->str = strdup(str);
