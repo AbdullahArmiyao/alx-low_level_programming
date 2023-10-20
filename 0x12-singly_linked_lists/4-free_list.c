@@ -10,7 +10,7 @@ void safely_free_mem(void **pnt)
 	if (pnt != NULL || *pnt != NULL)
 	{
 		free(*pnt);
-		pnt = NULL;
+		*pnt = NULL;
 	}
 }
 
@@ -27,7 +27,7 @@ void free_list(list_t *head)
 	{
 		c_node = head;
 		head = head->next;
-		safely_free_mem(c_node->str);
-		safely_free_mem(c_node);
+		safe_mem_free(c_node->str);
+		safe_mem_free(c_node);
 	}
 }

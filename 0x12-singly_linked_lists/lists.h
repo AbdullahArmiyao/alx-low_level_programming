@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define safe_mem_free(ptr) safely_free_mem((void **) &ptr)
+
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
