@@ -15,7 +15,7 @@ void safely_free_mem(void **pnt)
 }
 
 /**
- * free_list - frees a list_t list
+ * free_listint2 - frees a list_t list
  * @head: pointer to head node
  */
 

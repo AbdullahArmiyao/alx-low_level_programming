@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define safe_mem_free(p) safely_free_mem((void **) &(p));
+#define safe_mem_free(p) safely_free_mem((void **) &(p))
 /**
  * struct listint_s - singly linked list
  * @n: integer
