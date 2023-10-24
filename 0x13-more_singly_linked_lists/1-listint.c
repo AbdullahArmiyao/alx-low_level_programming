@@ -1,14 +1,14 @@
 #include "lists.h"
 
 /**
- * print_listint - function that prints all ellements in the struct listint_t
+ * print_listint - function that prints length of list
  *
  * @h: head pointer
  *
  * Return: total number of nodes
  */
 
-size_t print_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
 	size_t i = 0;
 
