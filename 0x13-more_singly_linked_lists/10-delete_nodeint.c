@@ -2,7 +2,7 @@
 
 /**
  * delete_nodeint_at_index - deletes the nth node of a listint_t list
- * 
+ *
  * @head: a pointer to the head node
  * @index: the index of the node to delete
  *
