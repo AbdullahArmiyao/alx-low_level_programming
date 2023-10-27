@@ -5,7 +5,7 @@
  *
  * @n: the number to clear bit for
  * @index: the index at which the bit is to be cleared
- * 
+ *
  * Return: 1 if bit was cleared successful, else -1 for error.
  * The error condition in this case is when the index is greater than
  * boundary accepted for bit on a 64-bit machine
