@@ -3,6 +3,8 @@
 
 #define is_non_binary(c) ((c) != '0' && (c) != '1')
 #define _atoi(c) ((c) - '0')
+#define BOUNDARY 63 /* 0 through 64, exclusive */
+
 
 #include <stddef.h>
 
