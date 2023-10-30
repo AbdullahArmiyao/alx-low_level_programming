@@ -33,7 +33,7 @@ int create_file(const char *filename, char *text_content)
 	/* check if the write failed or the right number of bytes was written */
 	if (n_write == -1 || (size_t)n_write != len)
 		return (-1);
-	
+
 	close(fd);
 	return (1);
 }
