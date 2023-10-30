@@ -51,8 +51,8 @@ int append_text_to_file(const char *filename, char *text_content);
 
 /* helper functions for task 3 - cp */
 
-void cp(int fd_in, int fd_out, char *buffer, char *dest_file, char *src_file);
-char *prepare_buffer(char *src, char *dest);
+void cp(int fd_in, int fd_out, char *buff, char *dest_file, char *src_file);
+char *prp_buff(char *src, char *dest);
 int close_fds(int nfds, ...);
 
 
